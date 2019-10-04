@@ -16,7 +16,7 @@ body {
 .testclass > td {
     border-bottom: 1px solid silver;
     color: #222222;
-    padding: 3px;
+    padding: 10px;
     font-weight: bold;
 }
 
@@ -32,6 +32,7 @@ body {
 .testcase > div {
     border-left: 3px solid black;
     padding-left: 1em;
+    white-space: nowrap;
 }
 
 .testcase pre {
@@ -49,6 +50,14 @@ body {
 
 .stdout, .stderr, .property {
     margin-left: 1em;
+}
+
+.testcase {
+    white-space: nowrap;
+}
+
+.testcase:nth-child(even) {
+    background: gainsboro
 }
 
 .testcase-link {
@@ -107,4 +116,5 @@ body {
 
 .result-stats {
     margin: auto;
+    position: absolute;
 }
